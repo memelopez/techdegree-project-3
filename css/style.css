@@ -6,6 +6,7 @@ body {
     font-family: 'Nunito', sans-serif;
     color: gray;
     background-color: #FCFFFF;
+    font-size: 1.05em;
 }
 
 h2,
@@ -14,8 +15,7 @@ legend {
 }
 
 form {
-    padding-top: 1.5em;
-    margin-top: 0.25em;
+    padding-top: .5em;
 }
 
 input[type="text"],
@@ -31,7 +31,7 @@ input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
-  border: none;
+  border: 2px solid rgba(255,255,255,0.1) /*rgba(0,0,0,0.05)*/;
   font-size: 16px;
   height: auto;
   margin: 0;
@@ -41,12 +41,13 @@ select {
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 14px 18px 0;
+  margin: 10px 14px 18px 10px;
   padding: 1em 1em;
 }
 
@@ -127,13 +128,28 @@ div[class="name"] {
     height: 100px;
 }
 
-legend::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #2C3844;
+hr.separator-bar {
+        display: block;
+        height: 2px;
+        border: 0;
+        border-top: 2px solid #2C3844;
+        margin: 3px 0 1.5em;
+        padding: 0;
 }
 
+input[id="zip"] {
+    width: 50%;
+}
 
+input:focus,
+textarea:focus {
+    border-color: #0b3865;
+}
 
+.main-footer {
+    margin: 1.5em 0 15em;
+}
+
+.news-label {
+    margin: 7px 0 15px;
+}

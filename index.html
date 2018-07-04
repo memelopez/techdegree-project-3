@@ -21,6 +21,7 @@
         </div><!--./banner  -->
     </header><!--./main-header  -->
     <div class="container">
+        <hr class="separator-bar">
         <form action="index.html" method="post">
             <fieldset>
                 <legend>Contact Information</legend>
@@ -49,18 +50,19 @@
                 <input type="text" name="user_zip" id="zip">
             </fieldset>
 
+            <hr class="separator-bar">
             <fieldset>
                 <legend>Newsletter</legend>
-                <label for="">Select the newsletter you would like to recieve:</label> 
+                <label for="" class="news-label">Select the newsletter you would like to recieve:</label> 
                 <input type="checkbox" name="user_newsletter" id="html_news" value="user_news_html"><label for="html_news" class="light">HTML News</label><br>
                 <input type="checkbox" name="user_newsletter" id="css_news" value="user_news_css"><label for="css_news" class="light">CSS News</label><br>
                 <input type="checkbox" name="user_newsletter" id="javascript_news" value="user_news_javascript"><label for="javascript_news" class="light">Javascript News</label> <br>
 
-                <label for="">Nesletter format</label>
+                <label for="" class="news-label">Nesletter format</label>
                 <input type="radio" name="user_format" id="html" value="html"><label for="html" class="light">HTML</label> <br>
                 <input type="radio" name="user_format" id="plain" value="plan"><label for="plain" class="light">Plain text</label> <br>
 
-                <label for="other_topics">Other topics you would like to hear about:</label>
+                <label for="other_topics" class="news-label">Other topics you would like to hear about:</label>
                 <textarea name="user_other_topics" id="other_topics" class="txt-a"></textarea>
             </fieldset>
 

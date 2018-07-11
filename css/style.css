@@ -175,6 +175,10 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     padding: 0 10px;
 }
 
+input[id="phonenum"] {
+    text-align: left;
+}
+
 .btn:hover {
     opacity: .75;
 }

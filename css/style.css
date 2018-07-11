@@ -41,12 +41,15 @@ select {
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
   border-radius: 4px;
+}
+
+.inp {
+    width: 100%;
 }
 
 input[type="radio"],
@@ -91,9 +94,12 @@ button {
   }
   
   label {
-    display: block;
     margin-bottom: 8px;
     color: gray;
+  }
+
+  .col {
+      display: block;
   }
   
   label.light {
@@ -131,6 +137,7 @@ div[class="name"] {
 
 .txt-a {
     height: 100px;
+    width: 100%
 }
 
 hr.separator-bar {
@@ -138,7 +145,7 @@ hr.separator-bar {
         height: 2px;
         border: 0;
         border-top: 2px solid #2C3844;
-        margin: 3px 0 1.5em;
+        margin: 3px 0 2em;
         padding: 0;
 }
 
@@ -156,7 +163,8 @@ textarea:focus {
 }
 
 .news-label {
-    margin: 7px 0 15px;
+    margin: 7px 0 20px;
+    display: block;
 }
 
 input::-webkit-input-placeholder { /* WebKit browsers */
@@ -164,4 +172,43 @@ input::-webkit-input-placeholder { /* WebKit browsers */
     opacity: 0.5;
     font-style: italic;
     font-size: .9em;
+    padding: 0 10px;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+/* ------------------------------------------- */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inp {
+        width: 70%;
+        display: inline;
+    }
+
+    .col{
+        display: inline;
+        padding-top: 1em;
+    }
+
+    label[for="zip"] {
+        display: inline-block;
+        width: 30%;
+    }
+
+}
+
+.clear {
+    clear: both;
 }

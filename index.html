@@ -27,28 +27,54 @@
             <fieldset>
                 <legend>Contact Information</legend>
 
-                <label for="name">Full Name</label>
-                <input type="text" name="user_name" id="name" placeholder="Required">
-                <label for="email">Email Address</label >
-                <input type="email" name="user_email" id="email" placeholder="Required">
-                <label for="phonenum">Phone Number</label>
-                <input type="text" name="user_phonenum" id="phonenum">
-                <label for="address">Street Address</label>
-                <input type="text" name="user_address" id="address">
-                <label for="city">City</label>
-                <input type="text" name="user_city" id="city">
-                <label for="state">State</label>
-                <select name="user_state" id="state">
-                    <option value="atlantida">Atlantida</option>
-                    <option value="cholutec">Choluteca</option>
-                    <option value="colon">Colón</option>
-                    <option value="comayagua">Comayagua</option>
-                    <option value="copan">Copán</option>
-                    <option value="cortes">Cortés</option>
-                    <!-- Me gustaría poner las zonas como optgroups -->
-                </select>
-                <label for="zip">Zip Code</label>
-                <input type="text" name="user_zip" id="zip">
+                <div class="row">
+                    <label for="name" class="col">Full Name</label>
+                    <input type="text" name="user_name" id="name" placeholder="Required" class="col inp">
+                </div> <!-- ./row-->
+                <div class="row">
+                    <label for="email" class="col">Email Address</label>
+                    <input type="email" name="user_email" id="email" placeholder="Required" class="col inp">
+                </div> <!-- ./row-->
+                <div class="row">
+                    <label for="phonenum" class="col">Phone Number</label>
+                    <input type="text" name="user_phonenum" id="phonenum" class="col inp">
+                </div> <!-- ./row-->
+                <div class="row">
+                    <label for="address" class="col">Street Address</label>
+                    <input type="text" name="user_address" id="address" class="col inp">
+                </div> <!-- ./row-->
+                <div class="row">
+                    <label for="city" class="col">City</label>
+                    <input type="text" name="user_city" id="city" class="col inp">
+                </div> <!-- ./row-->
+                <div class="row">
+                    <label for="state" class="col">State</label>
+                    <select name="user_state" id="state" class="col inp">
+                        <option value="select">Choose State</option>
+                        <option value="atlantida">Atlantida</option>
+                        <option value="cholutec">Choluteca</option>
+                        <option value="colon">Colón</option>
+                        <option value="comayagua">Comayagua</option>
+                        <option value="copan">Copán</option>
+                        <option value="cortes">Cortés</option>
+                        <option value="paraiso">El Paraíso</option>
+                        <option value="fco_morazan">Francisco Morazán</option>
+                        <option value="gracias">Gracias a Dios</option>
+                        <option value="intibuca">Intibuca</option>
+                        <option value="islas">Islas de la Bahía</option>
+                        <option value="la_paz">La Paz</option>
+                        <option value="lempira">Lempira</option>
+                        <option value="ocotepeque">Ocotepeque</option>
+                        <option value="olancho">Olancho</option>
+                        <option value="santa_barbara">Santa Bárbara</option>
+                        <option value="valle">Valle</option>
+                        <option value="yoro">Yoro</option>
+                    </select>
+                </div> <!-- ./row-->
+                <div class="">
+                    <label for="zip" class="col">Zip Code</label>
+                    <input type="text" name="user_zip" id="zip" class="col inp">
+                </div> <!-- ./row-->
             </fieldset>
 
             <hr class="separator-bar">
@@ -67,7 +93,7 @@
                 <textarea name="user_other_topics" id="other_topics" class="txt-a"></textarea>
             </fieldset>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit" class="btn">Sign Up</button>
 
             <footer class="main-footer">
                 <span>Copyright The Code Review</span>
